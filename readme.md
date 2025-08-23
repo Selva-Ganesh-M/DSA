@@ -42,3 +42,4 @@ Tracking solving progress per topic. Files are named sequentially (`1.ts`, `2.ts
 ## Bit Manipulation
 
 1. convertDecimalToBinary
+2. convertBinaryToDecimal
