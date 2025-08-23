@@ -38,3 +38,7 @@ Tracking solving progress per topic. Files are named sequentially (`1.ts`, `2.ts
 ## Math
 
 1.
+
+## Bit Manipulation
+
+1. convertDecimalToBinary
