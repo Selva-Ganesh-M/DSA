@@ -45,6 +45,7 @@ Tracking solving progress per topic. Files are named sequentially (`1.ts`, `2.ts
 3. primeFactors of a number (recursive)
 4. seive
 5. prime factors of a number
+6. factorial
 
 ## Bit Manipulation
 
