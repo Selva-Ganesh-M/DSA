@@ -19,6 +19,7 @@ Tracking solving progress per topic. Files are named sequentially (`1.ts`, `2.ts
 3. longestCommonPrefix
 4. reverseWordsInString
 5. findSubstrings
+6. findSubSequenceUsingPowerSet
 
 ## Array
 
