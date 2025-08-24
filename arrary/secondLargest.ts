@@ -1,56 +1,43 @@
-function bruteForce(arr: Array<number>){
-    arr.sort((a, b)=>a-b)
-    const last = arr[arr.length-1]
-    let secondLast = -Infinity;
-    let i=arr.length-1
-    while(i>=0){
-        if (arr[i]>secondLast && arr[i]<last){
-            secondLast = arr[i]
-        };
-        i--;
+function brute(arr: Array<number>){
+    arr.sort()
+    if (arr?.length<=1){
+        return -1
     }
-    return secondLast
+    let greatest = arr[arr.length-1]
+    let secondLargest = null;
+    for (let i=arr.length-1; i>=0; i--){
+        if (arr[i]<greatest){
+            if (!secondLargest){
+                secondLargest = arr[i];
+                break;
+            }
+        }
+    }
+    console.log(secondLargest ?? -1)
 }
 
-function better (arr: number[]){
+function optimal (arr: Array<number>){
     let largest = -Infinity
-    for (let num of arr){
-        if (num>largest){
-            largest = num
-        }
-    }
-    let secondLargest = -Infinity
-    for (let num of arr){
-        if (num>secondLargest && num<largest){
-            secondLargest=num;
-        }
-    }
-    return secondLargest
-}
-
-
-function optimal(arr: Array<number>){
-    let largest = arr[0]
-    let secondLargest = -Infinity
-    for (let i=1; i<arr.length; i++){
-        if (arr[i]>largest){
-            secondLargest = largest
-            largest = arr[i]
+    let sLargest = -Infinity
+    let i=0;
+    while (i<arr.length){
+        const curr = arr[i]
+        if (curr>largest){
+            sLargest = largest;
+            largest = curr;
+            i++;
             continue;
         }
-        if (arr[i]>secondLargest){
-            secondLargest = arr[i]
+        if (curr>sLargest && curr<largest){
+            sLargest = curr
         }
+        i++;
     }
-    return secondLargest
-    
+    console.log(sLargest == -Infinity ? -1 : sLargest)
 }
 
-const arr = [-9, 8 ,6 , 5, 4, 2, 11, 23]
-console.log(bruteForce(arr))
+const arr = [9,9,9,7]
+brute(arr)
+optimal(arr)
 
-const _arr = [-9, 8 ,6 , 5, 4, 2, 23]
-console.log(better(_arr))
 
-const __arr = [-9, 8 ,6 , 5, 4, 2, 22, 55]
-console.log(optimal(__arr))
