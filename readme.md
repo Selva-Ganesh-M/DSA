@@ -29,7 +29,7 @@ Tracking solving progress per topic. Files are named sequentially (`1.ts`, `2.ts
 
 ## Graph
 
-1.
+1. noOfProvinces
 
 ## Sorting
 
@@ -39,8 +39,9 @@ Tracking solving progress per topic. Files are named sequentially (`1.ts`, `2.ts
 
 1. getFactors
 2. isPrime
-3. primeFactors of a number
+3. primeFactors of a number (recursive)
 4. seive
+5. prime factors of a number
 
 ## Bit Manipulation
 

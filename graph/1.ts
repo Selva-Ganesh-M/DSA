@@ -1,5 +1,5 @@
 type Matrix<T> = Array<Array<T>>;
-class Graph {
+export class Graph {
     adjMatrix: Matrix<number> = [];
 
     constructor(adjMatrix: Matrix<number>) {
