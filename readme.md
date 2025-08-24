@@ -40,6 +40,7 @@ Tracking solving progress per topic. Files are named sequentially (`1.ts`, `2.ts
 1. getFactors
 2. isPrime
 3. primeFactors of a number
+4. seive
 
 ## Bit Manipulation
 
