@@ -30,6 +30,7 @@ Tracking solving progress per topic. Files are named sequentially (`1.ts`, `2.ts
 ## Graph
 
 1. noOfProvinces
+2. noOfIslands
 
 ## Sorting
 
